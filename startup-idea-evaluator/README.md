@@ -131,3 +131,8 @@ Thanks to the open-source React Native and Expo communities and the creators of 
 
 ---
 
+Feel free to ask if you want assistance with a video walkthrough script or detailed deployment support!
+
+
+Citations:
+[1] Mobile-App-Internship-Assignment.pdf https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/90315944/5807bf28-e0f2-4820-bf32-b286eec1e996/Mobile-App-Internship-Assignment.pdf

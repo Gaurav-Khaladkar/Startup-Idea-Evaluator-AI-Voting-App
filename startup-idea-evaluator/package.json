@@ -1,0 +1,36 @@
+{
+  "name": "startup-idea-evaluator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/native-stack": "^7.3.25",
+    "expo": "~53.0.20",
+    "expo-clipboard": "^7.1.5",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-gesture-handler": "^2.28.0",
+    "react-native-paper": "^5.14.5",
+    "react-native-reanimated": "^4.0.2",
+    "react-native-safe-area-context": "^5.6.1",
+    "react-native-screens": "^4.15.1",
+    "react-native-toast-message": "^2.3.3",
+    "react-native-web": "^0.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-flow": "^7.27.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0"
+  },
+  "private": true
+}
