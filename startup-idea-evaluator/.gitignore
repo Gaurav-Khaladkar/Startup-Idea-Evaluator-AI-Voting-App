@@ -1,0 +1,91 @@
+# Node modules and Expo build files
+node_modules/
+.expo/
+.expo-shared/
+dist/
+build/
+web-build/
+expo-env.d.ts
+
+# Metro bundler health check files
+.metro-health-check*
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS system files
+.DS_Store
+*.pem
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment files
+.env
+.env.*.local
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.log
+*.ldb
+*.lock
+*.pid
+*.seed
+*.pid.lock
+*.xml
+
+# Android/IntelliJ/Android Studio files
+*.iml
+.gradle/
+local.properties
+/.idea/
+.cxx/
+.externalNativeBuild/
+captures/
+output.json
+
+# iOS files
+Pods/
+Podfile.lock
+*.xcworkspace
+*.xcuserdata/
+build/
+DerivedData/
+*.hmap
+*.ipa
+
+# VSCode files
+.vscode/
+.vscode-server/
+
+# Yarn and npm cache
+.yarn
+.npm
+.yarnrc
+
+# Ignore system and temp folders (Windows user folders that cause EAS build errors)
+AppData/
+AppData/**
+AppData/Local/Microsoft/Edge/
+AppData/Local/Packages/
+AppData/Local/Temp/
+AppData/Local/Microsoft/MSTeams/
+
+# IDE config folders
+.idea/
+.viminfo
+
+# Others
+.vscode/
+.ignore
