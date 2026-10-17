@@ -1,109 +1,83 @@
-# Startup Idea Evaluator 🚀
+<div align="center">
 
-Mobile app assignment implementation for: **"The Startup Idea Evaluator – AI + Voting App"**.
+# 🚀 Startup Idea Evaluator
 
-## App Description
+### AI-Assisted Venture Assessment & Community Voting Mobile Application
 
-This app lets users submit startup ideas, get a fake AI-generated rating, vote on ideas, and view a leaderboard of top ideas.
+[![React Native](https://img.shields.io/badge/React_Native-0.74-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Expo-SDK_51-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-All data is stored locally using AsyncStorage, so ideas and votes persist between app restarts.
+<br/>
 
-## Tech Stack
+<p align="center">
+  A production-ready mobile platform engineered for founders and venture enthusiasts to pitch startup concepts, receive algorithmic viability scores, participate in real-time community upvoting, and inspect competitive leaderboard rankings.
+</p>
 
-- React Native + Expo (TypeScript)
-- React Navigation (Bottom Tabs)
-- AsyncStorage for persistence
-- Expo Linear Gradient
-- Expo Clipboard
+</div>
 
-## Features Implemented
+---
 
-### 1) Idea Submission Screen
-- Form fields:
-  - Startup Name
-  - Tagline
-  - Description
-- On submit:
-  - Generates fake AI rating (0-100)
-  - Saves idea to local storage
-  - Navigates to Idea Listing screen
-- Toast feedback on success/error
+## ⚡ Core Features & Capabilities
 
-### 2) Idea Listing Screen
-- Displays all submitted ideas with:
-  - Name
-  - Tagline
-  - AI rating
-  - Vote count
-- Upvote button:
-  - One vote per idea (tracked in AsyncStorage)
-- Read more / Show less description toggle
-- Sort options:
-  - By rating
-  - By votes
-- Share + Copy-to-clipboard actions
+* **💡 Intelligent Concept Submission**: Form input capturing startup name, tagline, and business model description with instant validation.
+* **🧠 Heuristic AI Feasibility Scoring**: Algorithmic assessment scoring venture propositions from 0–100 based on problem-solution clarity.
+* **🗳️ Community Consensus & One-Vote Guard**: Built-in vote tracking preventing duplicate upvotes per device via asynchronous persistence.
+* **🏆 Real-Time Venture Leaderboard**: Dynamic multi-parameter ranking sorting concepts by highest community vote count or AI evaluation rating.
+* **🌓 Dual Theme Architecture**: Smooth, persistent dark/light mode toggle with customized linear gradients and glassmorphism cards.
+* **📋 Native OS Integration**: One-touch clipboard copying, native system share sheets, and interactive toast alerts.
 
-### 3) Leaderboard Screen
-- Shows top 5 ideas
-- Ranking basis toggle:
-  - Votes
-  - Rating
-- Styled cards with:
-  - 🥇🥈🥉 badges
-  - Gradients
-  - Shadows
+---
 
-### 4) Bonus Features
-- Dark mode toggle (global in header)
-- Toast notifications
-- Share and clipboard support
-
-## Project Structure
+## 🏗️ Application Architecture
 
 ```text
 startup-idea-evaluator/
-├── App.tsx
-├── src/
-│   ├── context/
-│   │   ├── IdeaContext.tsx
-│   │   └── ToastContext.tsx
-│   ├── screens/
-│   │   ├── SubmitIdeaScreen.tsx
-│   │   ├── IdeaListScreen.tsx
-│   │   └── LeaderboardScreen.tsx
-│   ├── storage/
-│   │   └── appStorage.ts
-│   ├── types/
-│   │   ├── idea.ts
-│   │   └── navigation.ts
-│   ├── theme.ts
-│   └── utils/
-│       └── rating.ts
-└── package.json
+├── App.tsx                     # Application Root & Theme Provider
+└── src/
+    ├── context/
+    │   ├── IdeaContext.tsx     # Global State Management (Ideas, Votes, Sorting)
+    │   └── ToastContext.tsx    # Native Feedback & Notification Toasts
+    ├── screens/
+    │   ├── SubmitIdeaScreen.tsx # Multi-field concept pitch screen
+    │   ├── IdeaListScreen.tsx   # Filterable community feeds & upvoting
+    │   └── LeaderboardScreen.tsx# Dynamic top-ranked venture podium
+    ├── storage/
+    │   └── appStorage.ts       # Thread-safe persistent AsyncStore
+    ├── types/
+    │   ├── idea.ts             # Strongly typed data models
+    │   └── navigation.ts       # React Navigation stack & tab types
+    ├── theme.ts                # Design system tokens & palette
+    └── utils/
+        └── rating.ts           # Algorithmic scoring heuristics
 ```
 
-## How to Run Locally
+---
+
+## 🚀 Quick Start Guide
 
 ### Prerequisites
-- Node.js 18+ recommended
-- Expo Go app on Android/iOS (for device testing)
+* [Node.js (v18+)](https://nodejs.org/)
+* [Expo Go](https://expo.dev/go) app installed on iOS or Android
 
-### Install & Run
-
+### 1. Clone & Install Dependencies
 ```bash
+git clone https://github.com/Gaurav-Khaladkar/Startup-Idea-Evaluator-AI-Voting-App.git
+cd Startup-Idea-Evaluator-AI-Voting-App
 npm install
-npm run start
 ```
 
-Then:
-- Press `a` for Android emulator/device
-- Press `w` for web
-- Or scan the QR code using Expo Go
+### 2. Launch Local Development Server
+```bash
+npx expo start
+```
 
-## Build / Share APK (Android)
+* Press **`a`** for Android Emulator.
+* Press **`w`** for Web Browser testing.
+* Or scan the terminal QR code using the **Expo Go** mobile app.
 
-Use EAS Build:
-
+### 3. Generate Android APK (EAS Build)
 ```bash
 npm install -g eas-cli
 eas login
@@ -111,21 +85,15 @@ eas build:configure
 eas build -p android --profile preview
 ```
 
-After build completes, share the generated APK link.
+---
 
-## Expo Publish / Share
+## 👨‍💻 Author
+**Gaurav Khaladkar**
+* 🌐 GitHub: [@Gaurav-Khaladkar](https://github.com/Gaurav-Khaladkar)
+* 💼 LinkedIn: [Gaurav Khaladkar](https://www.linkedin.com/in/gaurav-khaladkar/)
+* 📧 Email: [gauravkhaldkar2001@gmail.com](mailto:gauravkhaldkar2001@gmail.com)
 
-You can also share by publishing an Expo update:
+---
 
-```bash
-npx expo login
-npx expo publish
-```
-
-## Submission Checklist
-
-- [x] App source code
-- [ ] Expo link or APK link
-- [x] README (description, stack, features, run instructions)
-- [ ] 2–3 minute walkthrough video (Loom/YouTube)
-
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
